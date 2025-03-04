@@ -60,19 +60,19 @@ Use **Postman** or **cURL** to interact with the API:
 
 ✅ **Create an Account**
 ```sh
-curl -X POST "http://localhost:8080/accounts/123/create?initialBalance=1000"
+curl -X POST "http://localhost:8080/accounts/create?balance=1000"
 ```
 ✅ **Deposit Money**
 ```sh
-curl -X POST "http://localhost:8080/accounts/123/deposit?amount=500"
+curl -X POST "http://localhost:8080/accounts/{id}/deposit?amount=500"
 ```
 ✅ **Withdraw Money**
 ```sh
-curl -X POST "http://localhost:8080/accounts/123/withdraw?amount=300"
+curl -X POST "http://localhost:8080/accounts/{id}/withdraw?amount=300"
 ```
 ✅ **Get Account Details**
 ```sh
-curl -X GET "http://localhost:8080/accounts/123"
+curl -X GET "http://localhost:8080/accounts/{id}"
 ```
 
 ## 🏗️ Extending the Project
